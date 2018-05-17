@@ -8,14 +8,26 @@ h1 {
   font-size: 80px;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 h3 {
   font-size: 30px;
 }
 
+.headerboxtext {
+  min-height: 20px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+
 /* Giving our navbar some padding and a background color */
 .navbar {
-  padding: 10px;
-  background: #5191fd;
+  padding: 5px;
+  background: #fff;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
@@ -33,6 +45,12 @@ h3 {
 .navbar li a {
   color: #000;
   text-decoration: none;
+}
+
+.nav-select {
+  position: absolute;
+  align: right;
+  margin-top: 20px
 }
 
 /* Styling the header, giving it a height, a background color, and some top padding */
@@ -55,6 +73,9 @@ h3 {
   margin-top: 50px;
   margin-right: 100px;
   margin-left: 100px;
+}
+#title {
+  background: #65ddd3
 }
 
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
