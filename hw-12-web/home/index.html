@@ -13,41 +13,34 @@
         <div class="col-md-1">
         </div>
 
-        <div class="col-md-1" id="title">
-            Latitude
+        <div class="col-md-1">
+            <a href="#" id="title">Home</a>
         </div>
 
         <div class="col-md-7">
         </div>
 
         <div class="col-md-1 nav-tools">
-            <select id="select-id">
-                <option>
-                    <a href="#">Plots</a>
-                </option>
-                <option>
-                    <a href="#">Temperature vs. Latitude</a>
-                </option>
-                <option>
-                        <a href="#">Cloud coverage vs. Latitude</a>
-                </option>
-                <option>
-                        <a href="#">Humidity vs. Latitude</a>
-                </option>
-                <option>
-                        <a href="#">Wind speed vs. Latitude</a>
-                </option>
+            <select name="dropdown" id="select-id" onchange="location = this.value;">
+                <option value="../home/index.html" selected> Plots </option>
+                <option value="../home/index.html"> Summary </option>
+                <option value="../temperature/index.html"> Temperature vs. Latitude </option>
+                <option value="../cloudiness/index.html"> Cloud coverage vs. Latitude </option>
+                <option value="../humidity/index.html"> Humidity vs. Latitude </option>
+                <option value="../windspeed/index.html"> Wind speed vs. Latitude </option>
+                <option value="../temperature/world/index.html"> Tempterature vs. World </option>
+                <option value="../cloudiness/world/index.html"> Cloud coverage vs. World </option>
+                <option value="../humidity/world/index.html"> Humidity vs. World </option>
             </select>
         </div>
 
-
-
+        
         <div class="col-md-1 nav-tools">
-            Comparison
+            <a href="../comparisons/index.html"> Comparison </a>
         </div>
 
         <div class="col-md-1 nav-tools">
-            Data
+            <a href="../data/index.html"> Data </a>
         </div>
     </div>
 
@@ -62,7 +55,23 @@
                     <a target="_blank" href="tempvworld/index.html">
                         <img src="../Plots/output_16_1.png" alt="Heat map of the world" style="width:400px;height:250px" align="left">
                     </a>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    <p>
+                        The purpose of this project was to analyze how the weather changes 
+                        as you get closer to the equator.  To accomplish this, I first pulled 
+                        data from the OpenWeatherMap API to assemble a dataset on 5000 cities.
+                    </p>
+                    <p>
+                        After assembling the dataset, I used Pandas to plot various aspects of 
+                        the weather vs. latitude.  I also produced some scatter plots using the 
+                        latitude and longitude as the axes, and colorscales as the relevant variable.  
+                        Factors I looked at include: temperature, humidity, cloud coverage, and windspeed.  
+                        Any visualizations can be observed in full detail by clicking on them from their 
+                        description page.  The data can be found at the top right of any page, and was collected 
+                        on April 02, 2018.
+                    </p>
+                    <p>
+                        Note that any picture can be selected to view a larger version.
+                    </p>
                 </article>
             </div>
             <div class="second-section col-md-4">
@@ -72,25 +81,25 @@
                 <hr>
                 <div class="row">
                     <article class="viz-layout">
-                        <a href="#">
+                        <a href="../temperature/index.html">
                             <img src="../Plots/output_7_1.png" alt="Temperature vs. Latitude" style="width:200px;height:125px" align="left">
                         </a>
-                        <a href="#">
+                        <a href="../humidity/index.html">
                             <img src="../Plots/output_9_1.png" alt="Humidity vs. Latitude" style="width:200px;height:125px" align="right">
                         </a>
-                        <a href="#">
+                        <a href="../cloudiness/index.html">
                             <img src="../Plots/output_11_1.png" alt="Cloud coverage vs. Latitude" style="width:200px;height:125px" align="left">
                         </a>
-                        <a href="#">
+                        <a href="../windspeed/index.html">
                             <img src="../Plots/output_13_1.png" alt="Wind speed vs. Latitude" style="width:200px;height:125px" align="right">
                         </a>
-                        <a href="#">
+                        <a href="../temperature/world/index.html">
                             <img src="../Plots/output_16_1.png" alt="Heat map of the world" style="width:200px;height:125px" align="left">
                         </a>
-                        <a href="#">
+                        <a href="../humidity/world/index.html">
                             <img src="../Plots/output_17_1.png" alt="Humidity map of the world" style="width:200px;height:125px" align="right">
                         </a>
-                        <a href="#">
+                        <a href="../cloudiness/world/index.html">
                             <img src="../Plots/output_18_1.png" alt="Cloud coverage map of the world" style="width:200px;height:125px" align="left">
                         </a>
                     </article>
