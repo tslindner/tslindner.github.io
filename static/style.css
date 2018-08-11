@@ -133,9 +133,12 @@ button:hover {
     /* position: absolute; */
 }
 
-#staticResumeContent embed {
-    height: 92vh;
-    width: 60vw;
+#staticResumeContent img {
+    height: auto;
+    width: 35vw;
+    /* height: 92vh; */
+    overflow-y: scroll;
+    margin-left: 12vw;
 }
 
 .projectClass *{
