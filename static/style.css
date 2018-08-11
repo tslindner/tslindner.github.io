@@ -1,1 +1,144 @@
- 
+body {
+    background: rgb(95, 95, 95);
+}
+
+hr {
+    width: 45vw;
+    margin: 0px;
+    margin-top: 1vh;
+    background: rgb(218, 216, 216);
+}
+
+a:hover {
+    color: #54dfe9;
+    transition: color 1s;
+}
+
+button:hover {
+    color: #54dfe9;
+    transition: color 1s;
+}
+
+.main {
+    margin-top: 30vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    width: 40vw;
+    z-index: 1000;
+}
+
+.main *{
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    color: rgb(218, 216, 216);
+}
+
+.main i:hover {
+    color: #54dfe9;
+}
+
+.name span{
+    /* font-weight: 550; */
+    /* font-size: 80px; */
+    font-size: 5vw;
+ }
+
+#firstName {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#lastName {
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #54dfe9;
+    /* color: #54dfe9; */
+
+}
+
+.contactInfo {
+    margin-top: 10vh;
+    /* font-size: 14px; */
+    font-size: 1vw;
+
+}
+
+.contactInfo *{
+    /* font-size: 14px; */
+    font-size: 1vw;
+    margin-top: 2vh;
+    transition: color 1s;
+}
+
+.sideBar {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 60vw;
+    background-color: rgb(70, 70, 70);
+    height: 100vh;
+}
+
+.navButton {
+    width: 20vw;
+    height: 8vh;
+    color: rgb(218, 216, 216);
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    float: left;
+    background-color: black;
+    display: inline-block;
+}
+
+#personalPic {
+    height: 15vw;
+    width: 15vw;
+    float: right;  
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+#projectsContent {
+    color: rgb(218, 216, 216);
+    height: 92vh;
+    width: 60vw;
+    margin-left: 5vw;
+    display: inline-block;
+    transition: transform 1s;
+    /* position: absolute; */
+    transform: translate3d(0, 0, 0);
+    overflow-y: scroll;
+
+}
+
+#aboutMeContent {
+    color: rgb(218, 216, 216);
+    height: 92vh;
+    width: 60vw;
+    display: inline-block;
+    transition: transform 1s;
+    transform: translate3d(100vw, -92vh, 0);
+    /* position: absolute; */
+}
+
+#staticResumeContent {
+    color: rgb(218, 216, 216);
+    height: 92vh;
+    width: 60vw;
+    display: inline-block;
+    transition: transform 1s;
+    transform: translate3d(100vw, -184vh, 0);
+    /* position: absolute; */
+}
+
+.projectClass *{
+    color: rgb(218, 216, 216);
+    text-decoration: none;
+    max-width: 45vw;
+
+}
+
+.projectClass img {
+    height: 45vh;
+    width: 45vw;
+}
