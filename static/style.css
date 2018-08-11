@@ -1,5 +1,6 @@
 body {
     background: rgb(95, 95, 95);
+    /* background: rgb(55, 46, 182); */
 }
 
 hr {
@@ -83,6 +84,7 @@ button:hover {
     width: 20vw;
     height: 8vh;
     color: rgb(218, 216, 216);
+    font-size: 3vh;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -129,6 +131,11 @@ button:hover {
     transition: transform 1s;
     transform: translate3d(100vw, -184vh, 0);
     /* position: absolute; */
+}
+
+#staticResumeContent embed {
+    height: 92vh;
+    width: 60vw;
 }
 
 .projectClass *{
