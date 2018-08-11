@@ -149,6 +149,7 @@ button:hover {
 }
 
 .projectClass img {
-    height: 45vh;
     width: 45vw;
+    height: auto;
+
 }
