@@ -26,6 +26,7 @@ button:hover {
     margin-right: 8vh;
     width: 40vw;
     z-index: 1000;
+    overflow: hidden;
 }
 
 .main *{
@@ -107,7 +108,6 @@ button:hover {
     margin-left: 5vw;
     display: inline-block;
     transition: transform 1s;
-    /* position: absolute; */
     transform: translate3d(0, 0, 0);
     overflow-y: scroll;
 
@@ -128,11 +128,11 @@ button:hover {
     display: inline-block;
     transition: transform 1s;
     transform: translate3d(100vw, -92vh, 0);
-}
-
-#aboutMeContent *{
     margin-left: 5vw;
 }
+
+/* #aboutMeContent *{
+} */
 
 #staticResumeContent {
     color: rgb(218, 216, 216);
@@ -141,16 +141,12 @@ button:hover {
     display: inline-block;
     transition: transform 1s;
     transform: translate3d(100vw, -184vh, 0);
-    /* position: absolute; */
 }
 
 #staticResumeContent *{
-    /* height: auto; */
-    /* max-width: 45vw; */
     width: 50vw;
     height: 92vh;
     overflow-y: scroll;
-    /* margin-left: 12vw; */
     margin-left: 5vw;
 }
 
